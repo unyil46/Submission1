@@ -52,6 +52,7 @@ class HomeActivityTest {
             )
         )
         onView(allOf(withId(R.id.text_title_mv), isDisplayed()))
+        onView(allOf(withId(R.id.text_title_mv))).check(matches(withText(dummyMovies[0].title)))
         onView(allOf(withId(R.id.text_rate_mv), isDisplayed()))
         onView(allOf(withId(R.id.text_overview_mv), isDisplayed()))
     }
