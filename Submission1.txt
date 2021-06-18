@@ -1,32 +1,69 @@
-/* Testing Unit View Model */
-- MovieViewModelTest :
--- Load Movies
---- Data Movies tidak null
---- Jumlah Movies sesuai (11)
-- TvShowsViewModel 
--- Load TV Shows
---- Data TV Shows tidak null
---- Jumlah TV Shows sesuai (11)
-- DetailMovieViewModelTest
--- Load Movies
---- Data Movies tidak null
---- Data Movies sesuai
-- DetailTvshowsViewModelTest
--- Load TV Shows
---- Data TV Shows tidak null
---- Data TV Shows sesuai
+/* Skenario Unit Testing View Model */
 
-/* Testing UI ViewModel */
-- Menampilkan Data Movies
+1. MovieViewModelTest :
+
+-- Load Movies
+
+--- Memastikan data Movies tidak null
+
+--- Memastikan jumlah Movies sesuai (11)
+
+2. TvShowsViewModel 
+
+-- Load TV Shows
+
+--- Memastikan data TV Shows tidak null
+
+--- Memastikan jumlah TV Shows sesuai (11)
+
+3. DetailMovieViewModelTest
+
+-- Load Movies
+
+--- Memastikan data Movies tidak null
+
+--- Memastikan jumlah Movies sesuai
+
+4. DetailTvshowsViewModelTest
+
+-- Load TV Shows
+
+--- Memastikan data TV Shows tidak null
+
+--- Memastikan jumlah TV Shows sesuai
+
+
+
+/* Skenario Instrumental Testing ViewModel */
+
+1. Menampilkan Data Movies
+
 -- Memastikan rv_movies dalam keadaan tampil
--- Scroll rv_movies sampai data terakhir
-- Menampilkan Data Detail Movies
--- Klik data pertama di rv_movies
--- Memastikan text_title_mv, text_rate_mv, overview_mv tampil
 
-- Menampilkan Data TV Shows
+-- Scroll rv_movies sampai data terakhir
+
+2. Menampilkan Data Detail Movies
+
+-- Memberi tindakan klik data pertama di rv_movies
+
+-- Memastikan text_title_mv tampil
+
+-- Memastikan text_rate_mv tampil
+
+-- Memastikan overview_mv tampil
+
+3.  Menampilkan Data TV Shows
+
 -- Memastikan rv_tvshows dalam keadaan tampil
+
 -- Scroll rv_tvshows sampai data terakhir
-- Menampilkan Data Detail TV Shows
--- Klik data pertama di rv_tvshows
--- Memastikan text_title_tv, text_rate_tv, overview_tv tampil
+
+4. Menampilkan Data Detail TV Shows
+
+-- Memberi tindakan klik data pertama di rv_tvshows
+
+-- Memastikan text_title_tv tampil
+
+-- Memastikan text_rate_tv tampil
+
+-- Memastikan overview_tv tampil

@@ -51,10 +51,12 @@ class HomeActivityTest {
                 click()
             )
         )
-        onView(allOf(withId(R.id.text_title_mv), isDisplayed()))
-        onView(allOf(withId(R.id.text_title_mv))).check(matches(withText(dummyMovies[0].title)))
+        onView(allOf(withId(R.id.text_title_mv),isDisplayed()))
+        onView(allOf(withId(R.id.text_title_mv),withText(dummyMovies[0].title)))
         onView(allOf(withId(R.id.text_rate_mv), isDisplayed()))
+        onView(allOf(withId(R.id.text_rate_mv),withText(dummyMovies[0].vote_average)))
         onView(allOf(withId(R.id.text_overview_mv), isDisplayed()))
+        onView(allOf(withId(R.id.text_overview_mv),withText(dummyMovies[0].overview)))
     }
 
     @Test
@@ -68,8 +70,12 @@ class HomeActivityTest {
             )
         )
         onView(allOf(withId(R.id.text_title_tv), isDisplayed()))
+        onView(allOf(withId(R.id.text_title_tv),withText(dummyTvShows[0].title)))
         onView(allOf(withId(R.id.text_rate_tv), isDisplayed()))
+        onView(allOf(withId(R.id.text_rate_tv),withText(dummyTvShows[0].vote_average)))
         onView(allOf(withId(R.id.text_overview_tv), isDisplayed()))
+        onView(allOf(withId(R.id.text_overview_tv),withText(dummyTvShows[0].overview)))
+
     }
 
 }
